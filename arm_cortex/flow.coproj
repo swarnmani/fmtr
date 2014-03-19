@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.5" name="flow">
+  <Target name="flow" isCurrent="1">
+    <Device manufacturerId="7" manufacturerName="NXP" chipId="143" chipName="LPC1114x301" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="LPC1114x301"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00008000" startValue="0x00000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00002000" startValue="0x10000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../../../../../coocox/coide/configuration/programdata/flow/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="flow"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ColinkEx"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="LPC11xx_32.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+    <Component id="46" name="M0 Cmsis Core" path="" type="2"/>
+    <Component id="209" name="Cmsis Boot" path="" type="2"/>
+    <Component id="210" name="Common Header Files" path="" type="2"/>
+    <Component id="211" name="SYSCON" path="" type="2"/>
+    <Component id="213" name="GPIO" path="" type="2"/>
+    <Component id="214" name="IOCON" path="" type="2"/>
+    <Component id="215" name="UART" path="" type="2"/>
+    <Component id="217" name="SSP" path="" type="2"/>
+    <Component id="220" name="TIMER" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="LPC111x_Lib/include/lpc11xx_ssp.h" path="LPC111x_Lib/include/lpc11xx_ssp.h" type="1"/>
+    <File name="lcd.h" path="lcd.h" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_tmr.c" path="LPC111x_Lib/source/lpc11xx_tmr.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_iocon.h" path="LPC111x_Lib/include/lpc11xx_iocon.h" type="1"/>
+    <File name="cmsis_core/core_cmInstr.h" path="cmsis_core/core_cmInstr.h" type="1"/>
+    <File name="cmsis_lpc11xx/system_LPC11xx.c" path="cmsis_lpc11xx/system_LPC11xx.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_tmr.h" path="LPC111x_Lib/include/lpc11xx_tmr.h" type="1"/>
+    <File name="cmsis_lpc11xx" path="" type="2"/>
+    <File name="example/Blink.c" path="example/Blink.c" type="1"/>
+    <File name="cmsis_core/core_cmFunc.h" path="cmsis_core/core_cmFunc.h" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_gpio.c" path="LPC111x_Lib/source/lpc11xx_gpio.c" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_iocon.c" path="LPC111x_Lib/source/lpc11xx_iocon.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_libcfg.h" path="LPC111x_Lib/include/lpc11xx_libcfg.h" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_uart.c" path="LPC111x_Lib/source/lpc11xx_uart.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_uart.h" path="LPC111x_Lib/include/lpc11xx_uart.h" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_ssp.c" path="LPC111x_Lib/source/lpc11xx_ssp.c" type="1"/>
+    <File name="cmsis_core" path="" type="2"/>
+    <File name="cmsis_lpc11xx/LPC11xx.h" path="cmsis_lpc11xx/LPC11xx.h" type="1"/>
+    <File name="lcd.c" path="lcd.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc_types.h" path="LPC111x_Lib/include/lpc_types.h" type="1"/>
+    <File name="cmsis_lpc11xx/system_LPC11xx.h" path="cmsis_lpc11xx/system_LPC11xx.h" type="1"/>
+    <File name="cmsis_lpc11xx/startup" path="" type="2"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="example" path="" type="2"/>
+    <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
+    <File name="LPC111x_Lib/include" path="" type="2"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="LPC111x_Lib/source/lpc11xx_syscon.c" path="LPC111x_Lib/source/lpc11xx_syscon.c" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_gpio.h" path="LPC111x_Lib/include/lpc11xx_gpio.h" type="1"/>
+    <File name="LPC111x_Lib/include/lpc11xx_syscon.h" path="LPC111x_Lib/include/lpc11xx_syscon.h" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="cmsis_lpc11xx/startup/startup_lpc11xx.c" path="cmsis_lpc11xx/startup/startup_lpc11xx.c" type="1"/>
+    <File name="LPC111x_Lib/source" path="" type="2"/>
+    <File name="LPC111x_Lib" path="" type="2"/>
+  </Files>
+</Project>

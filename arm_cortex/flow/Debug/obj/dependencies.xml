@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Kumar\Desktop\PLC /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\cmsis_core /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\LPC111x_Lib /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\cmsis_lpc11xx /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\LPC111x_Lib\include /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32 /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code">
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_uart.h" lastModified="144c13443f6">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc_types.h" lastModified="14421147480">
+      </source>
+      <source file="..\..\..\example\Blink.c" lastModified="1442114e2f8">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h" lastModified="14421147098">
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\system_LPC11xx.h" lastModified="14421145e53">
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmInstr.h" lastModified="1442114588c">
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\system_LPC11xx.c" lastModified="14421146239">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h" lastModified="14421148581">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\startup\startup_lpc11xx.c" lastModified="14421145e50">
+      </source>
+      <source file="..\..\..\lcd.h" lastModified="144268e00dd">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_iocon.c" lastModified="14421149a3b">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h" lastModified="14421148592">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\lcd.c" lastModified="144361e752e">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+         <include file="..\..\..\lcd.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_tmr.h" lastModified="14421149a13">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_uart.c" lastModified="144c13443f7">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_uart.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="14421cb3018">
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h" lastModified="14421149a39">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\LPC11xx.h" lastModified="14421145e4e">
+         <include file="..\..\..\cmsis_core\core_cm0.h"/>
+         <include file="..\..\..\cmsis_lpc11xx\system_LPC11xx.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_ssp.h" lastModified="144c1342c23">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_tmr.c" lastModified="1444b6b0aa5">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_tmr.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cm0.h" lastModified="144211454a2">
+         <include file="..\..\..\cmsis_core\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_core\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cmFunc.h" lastModified="1442114588b">
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_syscon.c" lastModified="14421148594">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_ssp.c" lastModified="144c1342c3a">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_ssp.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_gpio.c" lastModified="14421148582">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\Kumar\Desktop\PLC /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\CoOS\portable /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\CoOS\kernel /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\cmsis_core /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\LPC111x_Lib /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\cmsis_lpc11xx /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\LPC111x_Lib\include /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32\CoOS /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code\32 /I..\..\..\..\..\Users\Kumar\Desktop\PLC\code">
+      <source file="..\..\..\example\Blink.c" lastModified="1442114e2f8">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h" lastModified="14421147098">
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\system_LPC11xx.h" lastModified="14421145e53">
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h" lastModified="14421148581">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\startup\startup_lpc11xx.c" lastModified="14421145e50">
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_iocon.c" lastModified="14421149a3b">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h" lastModified="14421148592">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_tmr.h" lastModified="14421149a13">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\include\lpc11xx_iocon.h" lastModified="14421149a39">
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lpc11xx\LPC11xx.h" lastModified="14421145e4e">
+         <include file="..\..\..\cmsis_core\core_cm0.h"/>
+         <include file="..\..\..\cmsis_lpc11xx\system_LPC11xx.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_syscon.c" lastModified="14421148594">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+      </source>
+      <source file="..\..\..\LPC111x_Lib\source\lpc11xx_gpio.c" lastModified="14421148582">
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_gpio.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_syscon.h"/>
+         <include file="..\..\..\LPC111x_Lib\include\lpc11xx_libcfg.h"/>
+         <include file="..\..\..\cmsis_lpc11xx\LPC11xx.h"/>
+      </source>
+   </includePath>
+</dependencies>

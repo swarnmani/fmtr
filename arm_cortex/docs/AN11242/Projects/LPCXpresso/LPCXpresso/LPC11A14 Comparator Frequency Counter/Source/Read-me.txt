@@ -1,0 +1,24 @@
+Purpose: 
+This examples shows the usage of the analog comparator in the LPC11Axx parts
+for a frequency counter / zero crossing detection application.
+
+Running mode:
+* Build and debug program
+
+Note:
+This example has been tested on the IAR LPC11A14-SK board.
+Projects are provided for LPCXPresso, Keil uVision and IAR Embedded Workbench.
+It has been tested using:
+- LPCXpresso 4.2.3.292
+- Keil uVision 4.53
+- IAR Embedded Workbench 6.40.1.3812
+
+Pins used:
+ACMP_I3(P0_16) is the input on which the frequency is measured.
+P0_31 is used for the User Button.
+
+How to use it ?
+After startup, the system auto-calibrates the comparator for 1 second for best
+performance. The frequency and duty cycle of the input signal is then measured
+and displayed on the LCD and UART periodically. The auto-calibration can be
+repeated by pressing the User Button.
