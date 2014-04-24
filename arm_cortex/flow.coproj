@@ -80,34 +80,36 @@
     <File name="LPC111x_Lib/source/lpc11xx_tmr.c" path="LPC111x_Lib/source/lpc11xx_tmr.c" type="1"/>
     <File name="LPC111x_Lib/include/lpc11xx_iocon.h" path="LPC111x_Lib/include/lpc11xx_iocon.h" type="1"/>
     <File name="cmsis_core/core_cmInstr.h" path="cmsis_core/core_cmInstr.h" type="1"/>
-    <File name="cmsis_lpc11xx/system_LPC11xx.c" path="cmsis_lpc11xx/system_LPC11xx.c" type="1"/>
     <File name="LPC111x_Lib/include/lpc11xx_tmr.h" path="LPC111x_Lib/include/lpc11xx_tmr.h" type="1"/>
-    <File name="cmsis_lpc11xx" path="" type="2"/>
+    <File name="DAC.h" path="DAC.h" type="1"/>
     <File name="example/Blink.c" path="example/Blink.c" type="1"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx/startup/startup_lpc11xx.c" path="cmsis_lpc11xx/startup/startup_lpc11xx.c" type="1"/>
     <File name="cmsis_core/core_cmFunc.h" path="cmsis_core/core_cmFunc.h" type="1"/>
     <File name="LPC111x_Lib/source/lpc11xx_gpio.c" path="LPC111x_Lib/source/lpc11xx_gpio.c" type="1"/>
-    <File name="LPC111x_Lib/source/lpc11xx_iocon.c" path="LPC111x_Lib/source/lpc11xx_iocon.c" type="1"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx" path="" type="2"/>
     <File name="LPC111x_Lib/include/lpc11xx_libcfg.h" path="LPC111x_Lib/include/lpc11xx_libcfg.h" type="1"/>
+    <File name="LPC111x_Lib/source/lpc11xx_iocon.c" path="LPC111x_Lib/source/lpc11xx_iocon.c" type="1"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx/system_LPC11xx.h" path="cmsis_lpc11xx/system_LPC11xx.h" type="1"/>
     <File name="LPC111x_Lib/source/lpc11xx_uart.c" path="LPC111x_Lib/source/lpc11xx_uart.c" type="1"/>
     <File name="LPC111x_Lib/include/lpc11xx_uart.h" path="LPC111x_Lib/include/lpc11xx_uart.h" type="1"/>
     <File name="LPC111x_Lib/source/lpc11xx_ssp.c" path="LPC111x_Lib/source/lpc11xx_ssp.c" type="1"/>
     <File name="cmsis_core" path="" type="2"/>
-    <File name="cmsis_lpc11xx/LPC11xx.h" path="cmsis_lpc11xx/LPC11xx.h" type="1"/>
     <File name="lcd.c" path="lcd.c" type="1"/>
     <File name="LPC111x_Lib/include/lpc_types.h" path="LPC111x_Lib/include/lpc_types.h" type="1"/>
-    <File name="cmsis_lpc11xx/system_LPC11xx.h" path="cmsis_lpc11xx/system_LPC11xx.h" type="1"/>
-    <File name="cmsis_lpc11xx/startup" path="" type="2"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx/startup" path="" type="2"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
-    <File name="example" path="" type="2"/>
+    <File name="DAC.c" path="DAC.c" type="1"/>
     <File name="cmsis_core/core_cm0.h" path="cmsis_core/core_cm0.h" type="1"/>
+    <File name="example" path="" type="2"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx/system_LPC11xx.c" path="cmsis_lpc11xx/system_LPC11xx.c" type="1"/>
     <File name="LPC111x_Lib/include" path="" type="2"/>
     <File name="syscalls" path="" type="2"/>
     <File name="LPC111x_Lib/source/lpc11xx_syscon.c" path="LPC111x_Lib/source/lpc11xx_syscon.c" type="1"/>
     <File name="LPC111x_Lib/include/lpc11xx_gpio.h" path="LPC111x_Lib/include/lpc11xx_gpio.h" type="1"/>
     <File name="LPC111x_Lib/include/lpc11xx_syscon.h" path="LPC111x_Lib/include/lpc11xx_syscon.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
-    <File name="cmsis_lpc11xx/startup/startup_lpc11xx.c" path="cmsis_lpc11xx/startup/startup_lpc11xx.c" type="1"/>
     <File name="LPC111x_Lib/source" path="" type="2"/>
     <File name="LPC111x_Lib" path="" type="2"/>
+    <File name="LPC111x_Lib/cmsis_lpc11xx/LPC11xx.h" path="cmsis_lpc11xx/LPC11xx.h" type="1"/>
   </Files>
 </Project>

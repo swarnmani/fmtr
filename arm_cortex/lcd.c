@@ -15,9 +15,9 @@
 
 void lcd_config(void)
 {
-	GPIO_SetDir(LCD_PORT, LCD_BIT_RS, PORT_DIR_OUTPUT);
-	GPIO_SetDir(LCD_PORT, LCD_BIT_RW, PORT_DIR_OUTPUT);
-	GPIO_SetDir(LCD_PORT, LCD_BIT_E,  PORT_DIR_OUTPUT);
+	GPIO_SetDir(LCD_PORT1, LCD_BIT_RS, PORT_DIR_OUTPUT);
+	GPIO_SetDir(LCD_PORT1, LCD_BIT_RW, PORT_DIR_OUTPUT);
+	GPIO_SetDir(LCD_PORT1, LCD_BIT_E,  PORT_DIR_OUTPUT);
 
 	GPIO_SetDir(LCD_PORT, LCD_BIT_D4, PORT_DIR_OUTPUT);
 	GPIO_SetDir(LCD_PORT, LCD_BIT_D5, PORT_DIR_OUTPUT);
@@ -80,7 +80,7 @@ void lcd_cmd(unsigned char letter)
 {
 	// Command Function
 	//The RS is set to 0 to signify this is a command
-		unsigned char temp;             // temp Variable
+	unsigned char temp;             // temp Variable
 
 	temp=letter;                    //move letter to temp
 	temp=temp>>4;                   //shift temp to right by 4

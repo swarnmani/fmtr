@@ -2,9 +2,17 @@
 #include "lpc11xx_gpio.h"
 #include "lpc11xx_syscon.h"
 #include "lpc11xx_iocon.h"
-#include "lpc11xx_ssp.h"
 #include "lpc11xx_uart.h"
 #include "lcd.h"
+#include "DAC.h"
+
+#define FIFOSIZE 8
+
+#define SSPSR_TFE               (1 << 0)
+#define SSPSR_TNF               (1 << 1)
+#define SSPSR_RNE               (1 << 2)
+#define SSPSR_RFF               (1 << 3)
+#define SSPSR_BSY               (1 << 4)
 
 EVENT_InitTypeDef gpio_int_struct;
 TIM_TIMERCFG_Type timer_config;
@@ -14,34 +22,38 @@ static unsigned char blink;
 
 void gpio_init_config(void);
 void configTimer1(void);
+void SPI_Init();
+void SPISend( uint8_t Rvalup, uint8_t Rvallow );
 
 uint32_t frequency;
 
 int main ()
 {
-	TIM_TIMERCFG_Type timer_config;
-	TIM_MATCHCFG_Type match_config;
+	int i, j;
+//	TIM_TIMERCFG_Type timer_config;
+//	TIM_MATCHCFG_Type match_config;
 	UART_CFG_Type cfg;
 	UART_FIFO_CFG_Type UARTFIFOConfigStruct;
-	SSP_CFG_Type SSPConfigStruct;
 
 	/******************** GPIO **********************************/
 	SYSCON_AHBPeriphClockCmd(SYSCON_AHBPeriph_GPIO, ENABLE);
 	GPIO_SetDir(PORT0, GPIO_Pin_7, 1);
 	GPIO_SetDir(PORT3, GPIO_Pin_3, 0);
+
 	IOCON_SetPinMode(IOCON_PIO3_3, PIN_MODE_PullUp);
 	IOCON_SetPinMode(IOCON_PIO0_7, PIN_MODE_PullUp);
 	/*************************************************************/
 
 	/******************* LCD ***********************************/
 	lcd_init();
-	lcd_string(" **Flow Meter** ", 1);
+	lcd_string(" ** Flow Meter ** ", 1);
 	/************************************************************/
 
 	/****************** 32 bit Counter ****************************/
 	IOCON_SetPinFunc(IOCON_PIO1_5, PIO1_5_FUN_CT32B0_CAP0);
 	SYSCON_AHBPeriphClockCmd(SYSCON_AHBPeriph_CT32B0, ENABLE);
 	LPC_TMR32B0->CTCR = (1<<0);
+
 //	LPC_TMR32B0->TCR = (1<<1);
 //	LPC_TMR32B0->TCR = (1<<0);
 	/***************************************************************/
@@ -72,17 +84,7 @@ int main ()
 	/************************************************************************/
 
 	/******************************** SPI *********************************/
-	SSP_SSP1PinsInit (ENABLE);
-	SSPConfigStruct.Databit = SSP_DATABIT_12;
-	SSPConfigStruct.CPHA = SSP_CPHA_FIRST ;
-	SSPConfigStruct.CPOL = SSP_CPOL_HI;
-	SSPConfigStruct.ClockRate = SSP_MASTER_MODE;
-	SSPConfigStruct.FrameFormat = SSP_FRAME_SPI;
-	SSPConfigStruct.Mode = 100;
-
-	SSP_Init (LPC_SSP1, &SSPConfigStruct);
-	SSP_Cmd(LPC_SSP1, ENABLE);
-
+	DAC_SPI1_Config ();
 	/***********************************************************************/
 
 	/************************ 32 Bit Timer1 ******************************/
@@ -110,6 +112,10 @@ int main ()
 	/******************************************************************/
 	while(1)
 	{
+		// DAC_SPI1_Write(0x0E8B); // 3V
+		//DAC_SPI1_Write(0x09b2); // 2V
+		//DAC_SPI1_Write(0x04D9); // 1V
+
 		//idle
 	}
 }
@@ -159,7 +165,7 @@ void TIMER32_1_IRQHandler(void)
 	blink ^= 1;
 	lcd_string("F = ", 2);
 	lcdwriteint(frequency, 5);
-	SSP_SendData(LPC_SSP1, (uint16_t)frequency);
+	//SSP_SendData(LPC_SSP1, (uint16_t)frequency);
 	LPC_TMR32B0->TC = 0;
 	GPIO_PortIntCmd(PORT3, ENABLE);
 }

@@ -14,6 +14,7 @@
 #define LCD_BIT_E 	GPIO_Pin_2
 
 #define LCD_PORT PORT2
+#define LCD_PORT1 PORT3
 
 #define LCD_BIT_D4 GPIO_Pin_6
 #define LCD_BIT_D5 GPIO_Pin_7
@@ -58,12 +59,12 @@
 #define LCD_MOVE_DISP_LEFT       0x18   /* shift display left                     */
 #define LCD_MOVE_DISP_RIGHT      0x1C   /* shift display right                    */
 
-#define LCD_ENABLE()	GPIO_SetBits(LCD_PORT,LCD_BIT_E)	 //Port P2.0 = 1
-#define LCD_DISABLE()	GPIO_ResetBits(LCD_PORT,LCD_BIT_E)	 //Port P2.0 = 0
-#define LCD_RWON()	 	GPIO_SetBits(LCD_PORT,LCD_BIT_RW)	 //Port P2.1 = 1
-#define LCD_RWOFF()	 	GPIO_ResetBits(LCD_PORT,LCD_BIT_RW)	 //Port P2.1 = 0
-#define LCD_RSON()	 	GPIO_SetBits(LCD_PORT,LCD_BIT_RS) //Port P2.2 = 1
-#define LCD_RSOFF()	 	GPIO_ResetBits(LCD_PORT,LCD_BIT_RS) //Port P2.2 = 0
+#define LCD_ENABLE()	GPIO_SetBits(LCD_PORT1,LCD_BIT_E)	 //Port P2.0 = 1
+#define LCD_DISABLE()	GPIO_ResetBits(LCD_PORT1,LCD_BIT_E)	 //Port P2.0 = 0
+#define LCD_RWON()	 	GPIO_SetBits(LCD_PORT1,LCD_BIT_RW)	 //Port P2.1 = 1
+#define LCD_RWOFF()	 	GPIO_ResetBits(LCD_PORT1,LCD_BIT_RW)	 //Port P2.1 = 0
+#define LCD_RSON()	 	GPIO_SetBits(LCD_PORT1,LCD_BIT_RS) //Port P2.2 = 1
+#define LCD_RSOFF()	 	GPIO_ResetBits(LCD_PORT1,LCD_BIT_RS) //Port P2.2 = 0
 //
 
 #define lcdwritestringxy(x,y,msg) {\
