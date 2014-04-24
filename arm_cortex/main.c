@@ -6,13 +6,6 @@
 #include "lcd.h"
 #include "DAC.h"
 
-#define FIFOSIZE 8
-
-#define SSPSR_TFE               (1 << 0)
-#define SSPSR_TNF               (1 << 1)
-#define SSPSR_RNE               (1 << 2)
-#define SSPSR_RFF               (1 << 3)
-#define SSPSR_BSY               (1 << 4)
 
 EVENT_InitTypeDef gpio_int_struct;
 TIM_TIMERCFG_Type timer_config;
@@ -22,8 +15,6 @@ static unsigned char blink;
 
 void gpio_init_config(void);
 void configTimer1(void);
-void SPI_Init();
-void SPISend( uint8_t Rvalup, uint8_t Rvallow );
 
 uint32_t frequency;
 
