@@ -1,0 +1,14 @@
+Change in LCD IO
+------------------------------------------
+LCD_RS - P3.0
+LCD_RW - P3.1
+LCD_EN - P3.3
+
+**Note - Data lines are not changed
+------------------------------------------
+
+SPI Pins
+------------------------------------------
+SPI1_MOSI - P2.3
+SPI1_SCLK - P2.1
+SPI1_CS   - P2.0
