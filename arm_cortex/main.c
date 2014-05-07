@@ -15,12 +15,13 @@ static unsigned char blink;
 
 void gpio_init_config(void);
 void configTimer1(void);
+void Flow_Uart_Send (uint16_t data, uint8_t length);
 
 uint32_t frequency;
 
 int main ()
 {
-	int i, j;
+	//int i, j;
 //	TIM_TIMERCFG_Type timer_config;
 //	TIM_MATCHCFG_Type match_config;
 	UART_CFG_Type cfg;
@@ -71,7 +72,7 @@ int main ()
 	/* Enable Transmit */
 	UART_TxCmd(LPC_UART,ENABLE);
 
-	UART_Send(LPC_UART, (uint8_t *)"Hello, World!", sizeof("Hello, World!") - 1, NONE_BLOCKING);
+
 	/************************************************************************/
 
 	/******************************** SPI *********************************/
@@ -106,6 +107,18 @@ int main ()
 		// DAC_SPI1_Write(0x0E8B); // 3V
 		//DAC_SPI1_Write(0x09b2); // 2V
 		//DAC_SPI1_Write(0x04D9); // 1V
+		//UART_Send(LPC_UART, (uint8_t *)"Hello, World!\n", sizeof("Hello, World!\n") - 1, NONE_BLOCKING);
+		//_delay_ms(1000);
+
+		Flow_Uart_Send (1, 5);
+		_delay_ms(1);
+		Flow_Uart_Send (20, 5);
+		_delay_ms(1);
+		Flow_Uart_Send (300, 5);
+		_delay_ms(1);
+		Flow_Uart_Send (4000, 5);
+		_delay_ms(1);
+		Flow_Uart_Send (50000, 5);
 
 		//idle
 	}
@@ -159,4 +172,30 @@ void TIMER32_1_IRQHandler(void)
 	//SSP_SendData(LPC_SSP1, (uint16_t)frequency);
 	LPC_TMR32B0->TC = 0;
 	GPIO_PortIntCmd(PORT3, ENABLE);
+}
+
+void Flow_Uart_Send (uint16_t data, uint8_t length)
+{
+	char str[] = {0,0,0,0,0,0};
+	uint8_t i = 4, j;
+
+	while(data)
+	{
+		str[i] = data%10;
+		data = data/10;
+		i--;
+	}
+
+	if(length==-1)
+		while(str[j]==0) j++;
+	else
+		j=5-length;
+	for(i=j;i<5;i++)
+	{
+		str[i] = 48+str[i];
+	}
+
+	UART_Send(LPC_UART, (uint8_t *)str, sizeof(str) - 1, NONE_BLOCKING);
+	_delay_ms(1);
+	UART_Send(LPC_UART, (uint8_t *)"\n", sizeof("\n") - 1, NONE_BLOCKING);
 }
