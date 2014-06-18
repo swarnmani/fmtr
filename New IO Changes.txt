@@ -6,8 +6,6 @@ LCD_EN - P3.2
 External Interrupt Pin - P3.3
 32Bit Counter/Timer - P1.5
 
-JTAG_SWOX - P0.9
-
 /**************** No Need **************************/
 LDAC pin is directly to Ground in DAC cicuit.  No need to connect it to micro.
 
