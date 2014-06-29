@@ -1,25 +1,27 @@
 EAGLE AutoRouter Statistics:
 
-Job           : D:/svn/fmtr/trunk/arm_cortex/docs/Design_Drawing/Flowmeter_lpc1113.job
+Job           : D:/svn/fmtr/trunk/arm_cortex/docs/Design_Drawing/Flowmeter_lpc1113.brd
 
-Start at      : 14:47:53 (6/15/2014)
-End at        : 14:49:56 (6/15/2014)
-Elapsed time  : 00:02:03
+Start at      : 12:23:38 (6/29/2014)
+End at        : 12:24:07 (6/29/2014)
+Elapsed time  : 00:00:29
 
-Signals       :    64   RoutingGrid: 15 mil  Layers: 1
-Connections   :   151   predefined:  0 ( 0 Vias )
+Signals       :    65   RoutingGrid: 5 mil  Layers: 1
+Connections   :   168   predefined:  51 ( 0 Vias )
 
-Router memory :   231120
+Router memory :   2215674
+
+Job has been interrupted!
 
 Passname          :     Route
 
-Time per pass     :  00:02:03
-Number of Ripups  :       743
-max. Level        :         5
-max. Total        :        56
+Time per pass     :  00:00:29
+Number of Ripups  :        35
+max. Level        :         2
+max. Total        :        13
 
-Routed            :       128
+Routed            :        60
 Vias              :         0
-Resolution        :    84.8 %
+Resolution        :    66.1 %
 
-Final             : 84.8% finished
+Final             : interrupted
