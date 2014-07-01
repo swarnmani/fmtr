@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17613,6 +17613,7 @@ http://www.exar.com&lt;p&gt;
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="3V9" library="supply1" deviceset="VCC" device=""/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R0805W" value="50E"/>
 </parts>
 <sheets>
 <sheet>
@@ -17661,7 +17662,7 @@ http://www.exar.com&lt;p&gt;
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="C2" gate="G$1" x="22.86" y="238.76" rot="R90"/>
 <instance part="C1" gate="G$1" x="22.86" y="228.6" rot="R90"/>
-<instance part="R3" gate="G$1" x="45.72" y="233.68" rot="R90"/>
+<instance part="R3" gate="G$1" x="41.91" y="233.68" rot="R90"/>
 <instance part="GND10" gate="1" x="17.78" y="223.52"/>
 <instance part="24MHZ" gate="G$1" x="35.56" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.02" y="228.6" size="1.778" layer="95" rot="R90"/>
@@ -17824,6 +17825,7 @@ http://www.exar.com&lt;p&gt;
 <instance part="3V9" gate="VCC" x="161.29" y="52.07" smashed="yes">
 <attribute name="VALUE" x="167.64" y="54.61" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R24" gate="G$1" x="48.26" y="238.76" rot="R180"/>
 </instances>
 <busses>
 <bus name="SWITCH[0..5]">
@@ -17974,30 +17976,23 @@ http://www.exar.com&lt;p&gt;
 </net>
 <net name="XTAL_OUT" class="0">
 <segment>
-<wire x1="27.94" y1="238.76" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="238.76" x2="45.72" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="238.76" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="236.22" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
-<junction x="45.72" y="238.76"/>
-<junction x="35.56" y="238.76"/>
-<label x="55.88" y="238.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="24MHZ" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="201.93" y1="125.73" x2="209.55" y2="125.73" width="0.1524" layer="91"/>
 <label x="209.55" y="125.73" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="A" pin="XTALOUT"/>
+</segment>
+<segment>
+<wire x1="53.34" y1="238.76" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<label x="55.88" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="XTAL_IN" class="0">
 <segment>
 <wire x1="27.94" y1="228.6" x2="35.56" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="228.6" x2="45.72" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="228.6" x2="55.88" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="228.6" x2="41.91" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="41.91" y1="228.6" x2="55.88" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="231.14" x2="35.56" y2="228.6" width="0.1524" layer="91"/>
-<junction x="45.72" y="228.6"/>
+<junction x="41.91" y="228.6"/>
 <junction x="35.56" y="228.6"/>
 <label x="55.88" y="228.6" size="1.27" layer="95" xref="yes"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -18508,6 +18503,11 @@ http://www.exar.com&lt;p&gt;
 <label x="109.22" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="B" pin="PIO1_6/RXD/CT32B0_MAT0"/>
 </segment>
+<segment>
+<wire x1="226.06" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
+<label x="226.06" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="RO"/>
+</segment>
 </net>
 <net name="RS485_RX_EN" class="0">
 <segment>
@@ -18621,13 +18621,6 @@ http://www.exar.com&lt;p&gt;
 <pinref part="U8" gate="G$1" pin="Z"/>
 </segment>
 </net>
-<net name="UART_RX1" class="0">
-<segment>
-<wire x1="226.06" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
-<label x="226.06" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U8" gate="G$1" pin="RO"/>
-</segment>
-</net>
 <net name="SWITCH0" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
@@ -18680,6 +18673,20 @@ http://www.exar.com&lt;p&gt;
 <wire x1="153.67" y1="31.75" x2="153.67" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="153.67" y1="27.94" x2="153.67" y2="21.59" width="0.1524" layer="91"/>
 <wire x1="153.67" y1="29.21" x2="153.67" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="238.76" x2="41.91" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="238.76" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
+<junction x="41.91" y="238.76"/>
+<pinref part="24MHZ" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="238.76" x2="41.91" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="236.22" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
+<junction x="35.56" y="238.76"/>
 </segment>
 </net>
 </nets>
