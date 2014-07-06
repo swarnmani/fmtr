@@ -17489,13 +17489,11 @@ http://www.exar.com&lt;p&gt;
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="3V5" library="supply1" deviceset="VCC" device=""/>
-<part name="RST_SW" library="SparkFun1" deviceset="TAC_SWITCH" device="SMD"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="3V6" library="supply1" deviceset="VCC" device=""/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805K" value="18p"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
-<part name="PRG_SW" library="SparkFun1" deviceset="TAC_SWITCH" device="SMD"/>
 <part name="3V7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="jumper" deviceset="JP5Q" device=""/>
@@ -17504,11 +17502,8 @@ http://www.exar.com&lt;p&gt;
 <part name="R8" library="rcl" deviceset="POTENTIOMETER_" device="PT-10S"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U7" library="microchip" deviceset="MCP4921-E/P" device=""/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805K" value="100n"/>
-<part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805K" value="100n"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="SparkFun5" deviceset="5V" device=""/>
 <part name="U$5" library="SparkFun5" deviceset="5V" device=""/>
 <part name="U$6" library="SparkFun5" deviceset="5V" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
@@ -17538,20 +17533,18 @@ http://www.exar.com&lt;p&gt;
 <part name="X1" library="con-phoenix-508" deviceset="MKDSN1,5/3-5,08" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="+12V" device=""/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="C22" library="rcl" deviceset="C-EU" device="025-024X044" value="100n"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="D5" library="ng" deviceset="ZENER_DIODE" device="DO41Z10" value="3.3V"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="C23" library="rcl" deviceset="CPOL-EU" device="E5-6" value="100uF/60V"/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
@@ -17611,6 +17604,12 @@ http://www.exar.com&lt;p&gt;
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
 <part name="3V9" library="supply1" deviceset="VCC" device=""/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0805W" value="50E"/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0805K" value="100n"/>
+<part name="SUPPLY5" library="supply2" deviceset="+12V" device=""/>
+<part name="R25" library="rcl" deviceset="R-EU_" device="R0805W" value="10k"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="R0805W" value="22k"/>
+<part name="RST_SW" library="SparkFun1" deviceset="TAC_SWITCH" device="PTH"/>
+<part name="PRG_SW" library="SparkFun1" deviceset="TAC_SWITCH" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -17697,10 +17696,6 @@ http://www.exar.com&lt;p&gt;
 <instance part="3V5" gate="VCC" x="45.72" y="128.27" smashed="yes">
 <attribute name="VALUE" x="53.34" y="128.27" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RST_SW" gate="S" x="20.32" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="165.1" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="26.67" y="170.18" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R6" gate="G$1" x="27.94" y="96.52" rot="R90"/>
 <instance part="3V6" gate="VCC" x="27.94" y="106.68" smashed="yes">
 <attribute name="VALUE" x="35.56" y="106.68" size="1.778" layer="96" rot="R180"/>
@@ -17708,10 +17703,6 @@ http://www.exar.com&lt;p&gt;
 <instance part="C6" gate="G$1" x="27.94" y="81.28"/>
 <instance part="GND8" gate="1" x="27.94" y="66.04"/>
 <instance part="R7" gate="G$1" x="38.1" y="88.9" rot="R180"/>
-<instance part="PRG_SW" gate="S" x="20.32" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.32" y="71.12" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="26.67" y="76.2" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="3V7" gate="VCC" x="16.51" y="53.34" smashed="yes">
 <attribute name="VALUE" x="24.13" y="53.34" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -17722,13 +17713,8 @@ http://www.exar.com&lt;p&gt;
 <instance part="R8" gate="1" x="104.14" y="50.8" rot="R270"/>
 <instance part="GND15" gate="1" x="104.14" y="39.37"/>
 <instance part="U7" gate="A" x="342.9" y="134.62"/>
-<instance part="C8" gate="G$1" x="118.11" y="48.26"/>
-<instance part="GND16" gate="1" x="118.11" y="39.37"/>
 <instance part="C10" gate="G$1" x="290.83" y="138.43"/>
 <instance part="GND17" gate="1" x="290.83" y="114.3"/>
-<instance part="U$4" gate="G$1" x="118.11" y="60.96" smashed="yes">
-<attribute name="VALUE" x="114.3" y="62.23" size="1.778" layer="96"/>
-</instance>
 <instance part="U$5" gate="G$1" x="104.14" y="60.96" smashed="yes">
 <attribute name="VALUE" x="100.33" y="62.23" size="1.778" layer="96"/>
 </instance>
@@ -17817,6 +17803,14 @@ http://www.exar.com&lt;p&gt;
 <attribute name="VALUE" x="167.64" y="54.61" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R24" gate="G$1" x="48.26" y="238.76" rot="R180"/>
+<instance part="RST_SW" gate="S" x="20.32" y="173.99" smashed="yes" rot="MR270">
+<attribute name="NAME" x="24.13" y="182.88" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="26.67" y="176.53" size="1.778" layer="96" rot="MR270"/>
+</instance>
+<instance part="PRG_SW" gate="S" x="20.32" y="80.01" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.13" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="26.67" y="77.47" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 <bus name="SWITCH[0..5]">
@@ -17824,7 +17818,10 @@ http://www.exar.com&lt;p&gt;
 <wire x1="148.59" y1="29.21" x2="170.18" y2="29.21" width="0.762" layer="92"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="184.15" x2="92.71" y2="222.25" width="0.762" layer="92"/>
+<wire x1="92.71" y1="189.23" x2="92.71" y2="227.33" width="0.762" layer="92"/>
+</segment>
+<segment>
+<wire x1="207.01" y1="153.67" x2="207.01" y2="140.97" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -17853,14 +17850,13 @@ http://www.exar.com&lt;p&gt;
 <pinref part="U1" gate="B" pin="VSS"/>
 </segment>
 <segment>
-<wire x1="27.94" y1="170.18" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="165.1" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="167.64" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="165.1" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="165.1" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="165.1" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="RST_SW" gate="S" pin="2"/>
+<pinref part="RST_SW" gate="S" pin="4"/>
+<wire x1="22.86" y1="168.91" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="231.14" x2="100.33" y2="231.14" width="0.1524" layer="91"/>
@@ -17873,11 +17869,10 @@ http://www.exar.com&lt;p&gt;
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="27.94" y1="76.2" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="71.12" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="73.66" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="74.93" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="71.12" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="PRG_SW" gate="S" pin="2"/>
@@ -17901,11 +17896,6 @@ http://www.exar.com&lt;p&gt;
 <wire x1="104.14" y1="45.72" x2="104.14" y2="41.91" width="0.1524" layer="91"/>
 <pinref part="R8" gate="1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="118.11" y1="41.91" x2="118.11" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -18100,9 +18090,9 @@ http://www.exar.com&lt;p&gt;
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO0_8/MISO0/CT16B0_MAT0"/>
-<wire x1="115.57" y1="226.06" x2="109.22" y2="226.06" width="0.1524" layer="91"/>
-<label x="109.22" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="PIO0_5"/>
+<wire x1="115.57" y1="113.03" x2="109.22" y2="113.03" width="0.1524" layer="91"/>
+<label x="109.22" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -18112,34 +18102,32 @@ http://www.exar.com&lt;p&gt;
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO2_10"/>
-<wire x1="115.57" y1="190.5" x2="109.22" y2="190.5" width="0.1524" layer="91"/>
-<label x="109.22" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="PIO0_4"/>
+<wire x1="115.57" y1="130.81" x2="107.95" y2="130.81" width="0.1524" layer="91"/>
+<label x="107.95" y="130.81" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="27.94" y1="185.42" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="177.8" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="182.88" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="182.88" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="182.88" x2="22.86" y2="177.8" width="0.1524" layer="91"/>
 <junction x="27.94" y="182.88"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="RST_SW" gate="S" pin="4"/>
+<pinref part="RST_SW" gate="S" pin="2"/>
+<wire x1="22.86" y1="179.07" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="27.94" y1="91.44" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="88.9" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="88.9" x2="22.86" y2="85.09" width="0.1524" layer="91"/>
 <junction x="27.94" y="88.9"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -18190,54 +18178,6 @@ http://www.exar.com&lt;p&gt;
 <pinref part="JP2" gate="B" pin="3"/>
 </segment>
 </net>
-<net name="LCD_D4" class="0">
-<segment>
-<wire x1="111.76" y1="24.13" x2="118.11" y2="24.13" width="0.1524" layer="91"/>
-<label x="118.11" y="24.13" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP1" gate="B" pin="3"/>
-</segment>
-<segment>
-<wire x1="115.57" y1="110.49" x2="107.95" y2="110.49" width="0.1524" layer="91"/>
-<label x="107.95" y="110.49" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="A" pin="PIO2_6"/>
-</segment>
-</net>
-<net name="LCD_D5" class="0">
-<segment>
-<wire x1="115.57" y1="107.95" x2="107.95" y2="107.95" width="0.1524" layer="91"/>
-<label x="107.95" y="107.95" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="A" pin="PIO2_7"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="B" pin="10"/>
-<wire x1="96.52" y1="16.51" x2="90.17" y2="16.51" width="0.1524" layer="91"/>
-<label x="90.17" y="16.51" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LCD_D6" class="0">
-<segment>
-<wire x1="111.76" y1="21.59" x2="118.11" y2="21.59" width="0.1524" layer="91"/>
-<label x="118.11" y="21.59" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP1" gate="B" pin="5"/>
-</segment>
-<segment>
-<wire x1="115.57" y1="105.41" x2="107.95" y2="105.41" width="0.1524" layer="91"/>
-<label x="107.95" y="105.41" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="A" pin="PIO2_8"/>
-</segment>
-</net>
-<net name="LCD_D7" class="0">
-<segment>
-<wire x1="96.52" y1="21.59" x2="90.17" y2="21.59" width="0.1524" layer="91"/>
-<label x="90.17" y="21.59" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="B" pin="6"/>
-</segment>
-<segment>
-<wire x1="201.93" y1="146.05" x2="209.55" y2="146.05" width="0.1524" layer="91"/>
-<label x="209.55" y="146.05" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="A" pin="PIO2_9"/>
-</segment>
-</net>
 <net name="LCD_EN" class="0">
 <segment>
 <wire x1="111.76" y1="19.05" x2="118.11" y2="19.05" width="0.1524" layer="91"/>
@@ -18245,21 +18185,21 @@ http://www.exar.com&lt;p&gt;
 <pinref part="JP1" gate="B" pin="7"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO3_2/!DCD!"/>
-<wire x1="252.73" y1="220.98" x2="259.08" y2="220.98" width="0.1524" layer="91"/>
-<label x="259.08" y="220.98" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="B" pin="PIO2_11/SCK0"/>
+<wire x1="115.57" y1="187.96" x2="109.22" y2="187.96" width="0.1524" layer="91"/>
+<label x="109.22" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_R/W" class="0">
 <segment>
-<wire x1="90.17" y1="19.05" x2="96.52" y2="19.05" width="0.1524" layer="91"/>
-<label x="90.17" y="19.05" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="B" pin="8"/>
+<wire x1="90.17" y1="16.51" x2="96.52" y2="16.51" width="0.1524" layer="91"/>
+<label x="90.17" y="16.51" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="B" pin="10"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO3_1/!DSR!"/>
-<wire x1="252.73" y1="231.14" x2="259.08" y2="231.14" width="0.1524" layer="91"/>
-<label x="259.08" y="231.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="B" pin="R/PIO0_11/AD0/CT32B0_MAT3"/>
+<wire x1="115.57" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
+<label x="109.22" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_RS" class="0">
@@ -18269,9 +18209,9 @@ http://www.exar.com&lt;p&gt;
 <pinref part="JP1" gate="B" pin="9"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO3_0/!DTR!"/>
-<wire x1="115.57" y1="182.88" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
-<label x="109.22" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="B" pin="PIO1_10/AD6/CT16B1_MAT1"/>
+<wire x1="115.57" y1="200.66" x2="109.22" y2="200.66" width="0.1524" layer="91"/>
+<label x="109.22" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_CONT" class="0">
@@ -18336,9 +18276,9 @@ http://www.exar.com&lt;p&gt;
 <pinref part="U7" gate="A" pin="~LDAC"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO3_3/!RI!"/>
-<wire x1="115.57" y1="180.34" x2="109.22" y2="180.34" width="0.1524" layer="91"/>
-<label x="109.22" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="107.95" y="133.35" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="PIO0_3"/>
+<wire x1="107.95" y1="133.35" x2="115.57" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC_VOUT" class="0">
@@ -18349,11 +18289,6 @@ http://www.exar.com&lt;p&gt;
 </segment>
 </net>
 <net name="5V" class="0">
-<segment>
-<wire x1="118.11" y1="50.8" x2="118.11" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="5V"/>
-</segment>
 <segment>
 <wire x1="96.52" y1="26.67" x2="90.17" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="90.17" y1="26.67" x2="90.17" y2="29.21" width="0.1524" layer="91"/>
@@ -18506,9 +18441,9 @@ http://www.exar.com&lt;p&gt;
 <pinref part="U5" gate="A" pin="DE"/>
 </segment>
 <segment>
-<wire x1="115.57" y1="133.35" x2="107.95" y2="133.35" width="0.1524" layer="91"/>
-<label x="107.95" y="133.35" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="A" pin="PIO0_3"/>
+<pinref part="U1" gate="B" pin="PIO3_3/!RI!"/>
+<wire x1="115.57" y1="180.34" x2="109.22" y2="180.34" width="0.1524" layer="91"/>
+<label x="109.22" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND1" class="0">
@@ -18603,12 +18538,12 @@ http://www.exar.com&lt;p&gt;
 <label x="166.37" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="210.82" x2="115.57" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="U1" gate="B" pin="R/PIO1_2/AD3/CT32B1_MAT1"/>
+<wire x1="92.71" y1="223.52" x2="90.17" y2="223.52" width="0.1524" layer="91"/>
+<label x="90.17" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="210.82" x2="90.17" y2="210.82" width="0.1524" layer="91"/>
-<label x="90.17" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="B" pin="PIO0_9/MOSI0/CT16B0_MAT1"/>
+<wire x1="92.71" y1="223.52" x2="115.57" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH1" class="0">
@@ -18621,12 +18556,12 @@ http://www.exar.com&lt;p&gt;
 <label x="163.83" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="R/PIO1_1/AD2/CT32B1_MAT0"/>
-<wire x1="92.71" y1="198.12" x2="115.57" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="226.06" x2="90.17" y2="226.06" width="0.1524" layer="91"/>
+<label x="90.17" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="198.12" x2="90.17" y2="198.12" width="0.1524" layer="91"/>
-<label x="90.17" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="B" pin="PIO0_8/MISO0/CT16B0_MAT0"/>
+<wire x1="92.71" y1="226.06" x2="115.57" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH2" class="0">
@@ -18639,12 +18574,12 @@ http://www.exar.com&lt;p&gt;
 <label x="161.29" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="R/PIO1_0/AD1/CT32B1_CAP0"/>
-<wire x1="92.71" y1="213.36" x2="115.57" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="190.5" x2="90.17" y2="190.5" width="0.1524" layer="91"/>
+<label x="90.17" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="213.36" x2="90.17" y2="213.36" width="0.1524" layer="91"/>
-<label x="90.17" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="B" pin="PIO2_10"/>
+<wire x1="92.71" y1="190.5" x2="115.57" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH3" class="0">
@@ -18657,12 +18592,12 @@ http://www.exar.com&lt;p&gt;
 <label x="158.75" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="R/PIO0_11/AD0/CT32B0_MAT3"/>
-<wire x1="92.71" y1="218.44" x2="115.57" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="146.05" x2="209.55" y2="146.05" width="0.1524" layer="91"/>
+<label x="209.55" y="146.05" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="218.44" x2="90.17" y2="218.44" width="0.1524" layer="91"/>
-<label x="90.17" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="PIO2_9"/>
+<wire x1="207.01" y1="146.05" x2="201.93" y2="146.05" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH4" class="0">
@@ -18675,12 +18610,12 @@ http://www.exar.com&lt;p&gt;
 <label x="156.21" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO2_11/SCK0"/>
-<wire x1="92.71" y1="187.96" x2="115.57" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="143.51" x2="209.55" y2="143.51" width="0.1524" layer="91"/>
+<label x="209.55" y="143.51" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="187.96" x2="90.17" y2="187.96" width="0.1524" layer="91"/>
-<label x="90.17" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="PIO0_7/!CTS!"/>
+<wire x1="207.01" y1="143.51" x2="201.93" y2="143.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH5" class="0">
@@ -18693,12 +18628,12 @@ http://www.exar.com&lt;p&gt;
 <label x="153.67" y="16.51" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="B" pin="PIO1_10/AD6/CT16B1_MAT1"/>
-<wire x1="92.71" y1="200.66" x2="115.57" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="151.13" x2="209.55" y2="151.13" width="0.1524" layer="91"/>
+<label x="209.55" y="151.13" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="92.71" y1="200.66" x2="90.17" y2="200.66" width="0.1524" layer="91"/>
-<label x="90.17" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="207.01" y1="151.13" x2="201.93" y2="151.13" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="PIO0_6/SCK0_"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -18713,6 +18648,54 @@ http://www.exar.com&lt;p&gt;
 <wire x1="35.56" y1="238.76" x2="41.91" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="236.22" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
 <junction x="35.56" y="238.76"/>
+</segment>
+</net>
+<net name="LCD_D4" class="0">
+<segment>
+<pinref part="JP1" gate="B" pin="5"/>
+<wire x1="111.76" y1="21.59" x2="118.11" y2="21.59" width="0.1524" layer="91"/>
+<label x="118.11" y="21.59" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="B" pin="R/PIO1_0/AD1/CT32B1_CAP0"/>
+<wire x1="115.57" y1="213.36" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
+<label x="109.22" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LCD_D6" class="0">
+<segment>
+<pinref part="JP1" gate="B" pin="3"/>
+<wire x1="111.76" y1="24.13" x2="118.11" y2="24.13" width="0.1524" layer="91"/>
+<label x="118.11" y="24.13" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="B" pin="R/PIO1_2/AD3/CT32B1_MAT1"/>
+<wire x1="115.57" y1="210.82" x2="109.22" y2="210.82" width="0.1524" layer="91"/>
+<label x="109.22" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LCD_D7" class="0">
+<segment>
+<pinref part="JP1" gate="B" pin="6"/>
+<wire x1="96.52" y1="21.59" x2="90.17" y2="21.59" width="0.1524" layer="91"/>
+<label x="90.17" y="21.59" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="B" pin="PIO3_0/!DTR!"/>
+<wire x1="115.57" y1="182.88" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
+<label x="109.22" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LCD_D5" class="0">
+<segment>
+<pinref part="JP1" gate="B" pin="8"/>
+<wire x1="96.52" y1="19.05" x2="90.17" y2="19.05" width="0.1524" layer="91"/>
+<label x="90.17" y="19.05" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="B" pin="R/PIO1_1/AD2/CT32B1_MAT0"/>
+<wire x1="115.57" y1="198.12" x2="109.22" y2="198.12" width="0.1524" layer="91"/>
+<label x="109.22" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18753,13 +18736,9 @@ http://www.exar.com&lt;p&gt;
 <instance part="SUPPLY8" gate="+12V" x="81.28" y="101.6" rot="MR0"/>
 <instance part="SUPPLY9" gate="+12V" x="50.8" y="101.6" rot="MR0"/>
 <instance part="R18" gate="G$1" x="134.62" y="86.36" rot="MR0"/>
-<instance part="C22" gate="G$1" x="106.68" y="77.47" rot="MR0"/>
 <instance part="GND36" gate="1" x="106.68" y="67.31" rot="MR0"/>
 <instance part="D5" gate="1" x="142.24" y="80.01" rot="MR90"/>
 <instance part="GND37" gate="1" x="142.24" y="71.12" rot="MR0"/>
-<instance part="C23" gate="G$1" x="171.45" y="87.63" smashed="yes" rot="MR0">
-<attribute name="NAME" x="170.307" y="88.1126" size="1.778" layer="95" rot="MR0"/>
-</instance>
 <instance part="R9" gate="G$1" x="116.84" y="138.43" smashed="yes">
 <attribute name="NAME" x="118.364" y="142.24" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="118.618" y="136.906" size="1.778" layer="96" rot="R180"/>
@@ -18837,6 +18816,10 @@ http://www.exar.com&lt;p&gt;
 <attribute name="NAME" x="205.74" y="212.09" size="1.778" layer="95"/>
 <attribute name="VALUE" x="191.77" y="212.09" size="1.778" layer="96"/>
 </instance>
+<instance part="C23" gate="G$1" x="106.68" y="77.47" rot="MR0"/>
+<instance part="SUPPLY5" gate="+12V" x="142.24" y="99.06" rot="MR0"/>
+<instance part="R25" gate="G$1" x="96.52" y="88.9" rot="MR180"/>
+<instance part="R26" gate="G$1" x="116.84" y="99.06" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -18890,8 +18873,8 @@ http://www.exar.com&lt;p&gt;
 </segment>
 <segment>
 <wire x1="106.68" y1="69.85" x2="106.68" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="GND36" gate="1" pin="GND"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="73.66" x2="142.24" y2="74.93" width="0.1524" layer="91"/>
@@ -18903,10 +18886,6 @@ http://www.exar.com&lt;p&gt;
 <pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="74.93" x2="165.1" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="74.93" x2="165.1" y2="82.55" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="-"/>
-<wire x1="165.1" y1="74.93" x2="171.45" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="171.45" y1="74.93" x2="171.45" y2="82.55" width="0.1524" layer="91"/>
-<junction x="165.1" y="74.93"/>
 <pinref part="IC2" gate="A" pin="V-"/>
 <wire x1="115.57" y1="78.74" x2="115.57" y2="74.93" width="0.1524" layer="91"/>
 </segment>
@@ -19011,28 +18990,43 @@ http://www.exar.com&lt;p&gt;
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="99.06" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="90.17" x2="165.1" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="95.25" x2="142.24" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="95.25" x2="115.57" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="V+"/>
+<wire x1="115.57" y1="95.25" x2="115.57" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
+<wire x1="142.24" y1="96.52" x2="142.24" y2="95.25" width="0.1524" layer="91"/>
+<junction x="142.24" y="95.25"/>
+</segment>
 </net>
 <net name="SENSOR_SIGNAL" class="0">
 <segment>
-<wire x1="50.8" y1="86.36" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="83.82" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
-<label x="50.8" y="83.82" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="88.9" x2="69.85" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="88.9" x2="69.85" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="86.36" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="KL"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<label x="106.68" y="88.9" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<wire x1="110.49" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
+<wire x1="50.8" y1="81.28" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<junction x="50.8" y="83.82"/>
+<wire x1="50.8" y1="83.82" x2="69.85" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<wire x1="129.54" y1="86.36" x2="125.73" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="A" pin="OUT"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="127" y1="86.36" x2="125.73" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="127" y1="99.06" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<junction x="127" y="86.36"/>
 </segment>
 </net>
 <net name="PULSE" class="0">
@@ -19072,13 +19066,11 @@ http://www.exar.com&lt;p&gt;
 <wire x1="81.28" y1="83.82" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="80.01" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="83.82" x2="110.49" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="110.49" y1="83.82" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <junction x="81.28" y="83.82"/>
 <junction x="106.68" y="83.82"/>
 <pinref part="IC2" gate="A" pin="-IN"/>
-<junction x="110.49" y="83.82"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -19123,19 +19115,6 @@ http://www.exar.com&lt;p&gt;
 <label x="72.39" y="161.29" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="90.17" x2="165.1" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="95.25" x2="115.57" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="95.25" x2="171.45" y2="95.25" width="0.1524" layer="91"/>
-<junction x="165.1" y="95.25"/>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="171.45" y1="95.25" x2="171.45" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="V+"/>
-<wire x1="115.57" y1="95.25" x2="115.57" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="X2" gate="-3" pin="KL"/>
@@ -19166,6 +19145,18 @@ http://www.exar.com&lt;p&gt;
 <junction x="160.02" y="217.17"/>
 <pinref part="3V8" gate="VCC" pin="VCC"/>
 <wire x1="154.94" y1="219.71" x2="154.94" y2="217.17" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="99.06" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="88.9" x2="110.49" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
+<junction x="106.68" y="88.9"/>
 </segment>
 </net>
 </nets>
